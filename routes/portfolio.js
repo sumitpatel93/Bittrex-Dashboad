@@ -3,11 +3,11 @@ var router =  express.Router();
 const request =  require('request');
 
 router.get('/',(req,res,next) => {
-	request('https://bittrex.com/api/v1.1/public/getorderbook?market=BTC-LTC&type=both',function(error,response,body){
+	request(function(error,response,body){
 		if (!error) {
 			if (response.statusCode == 200){
 				var data = JSON.parse(body);
-				res.render('orderbook_layout',{ title:'Order Book Status', bittrexData: data.result[0]});
+				res.render('portfolio',{ title:'portfolio'});
 			}
 			 else{
 			 	next( new Error(response.statusCode));

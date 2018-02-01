@@ -1,0 +1,27 @@
+doctype html
+html
+  title Portfolio
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='https://www.w3schools.com/w3css/4/w3.css')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.js')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+  style.
+    canvas{
+    height:70% !important;
+    width:70% !important;
+    }
+  body
+    canvas#line-chart
+    script.
+      var ctx = $("#line-chart");
+      var barChart = new Chart(ctx,{
+      type:'bar',
+      data:{
+      labels:["jan","feb","march","apr","may","jun","july","aug","sep","oct","nov","dec"],
+      datasets:[{
+      label:"Bittrex Data Chart",
+      data:[10,22,12,10,2,4,6,7,8,8,9,1]
+      }]
+      }
+      });

@@ -8,6 +8,13 @@ block content
   h1 Welcome to  #{title}
   a(href="./index")
    button(type="button") HOME
-   
-  p  Rate chart  #{bittrexData.buy.Rate}
-  p  Quantity     #{bittrexData.Quantity}
+  h1 Buy statistics 
+  p  Buy         #{bittrexData.buy[9].Rate}
+  p  Quantity    #{bittrexData.buy[9].Quantity}
+  p  Buy         #{bittrexData.buy[19].Rate}
+  p  Quantity    #{bittrexData.buy[19].Quantity}
+  p  Buy         #{bittrexData.buy[11].Rate}
+  p  Quantity    #{bittrexData.buy[11].Quantity}
+
+
+  

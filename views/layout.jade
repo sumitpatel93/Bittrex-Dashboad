@@ -13,13 +13,8 @@ block content
   h1 Available Markets
   p #{bittrexData.MarketName} 
 
-  p #{bittrexData.MarketName} 
-  p #{bittrexData.MarketName}
-  p #{bittrexData.MarketName}
-  p #{bittrexData.MarketName}
-  p #{bittrexData.MarketName}
-
+  ul
+  each data in bittrexData
+    ul #{data} 
+    
   
-
-  
- 
