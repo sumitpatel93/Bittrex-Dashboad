@@ -5,16 +5,10 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
 
 block content
-  h1 Welcome to  #{title}
-  h2 Get the last 24 hours detail of market
+  h1 Get new address
   a(href="orderbook")
-   button(type="button") ORDERBOOK STATUS
+   button(type="button") generate new address
 
-  h1 Available Markets
-  p #{bittrexData.MarketName} 
 
-  ul
-  each data in bittrexData
-    ul #{data} 
-    
-  
+
+
